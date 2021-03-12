@@ -3,7 +3,7 @@
     {
       "id": "e8okoP2l5",
       "system_name": "DESKTOP-SMART",
-      "type": "WINDOWS_WORKSTATION",
+      "type": "MAC",
       "hdd_capacity": "10"
     },
     {
@@ -55,31 +55,18 @@
       "hdd_capacity": "256"
     },
     {
-      "id": "Up5bcEQp4",
-      "system_name": "JULIO-MAC-LOCAL",
+      "id": "yhfNuNA",
+      "system_name": "Miami",
       "type": "MAC",
-      "hdd_capacity": "512"
+      "hdd_capacity": "2048",
+      "createdAt": 1615568675614
     },
     {
-      "id": "DRaETcR",
-      "system_name": "hola",
-      "type": "MAC",
-      "hdd_capacity": "256",
-      "createdAt": 1615537938719
-    },
-    {
-      "id": "R4JjV9r",
-      "system_name": "segundo",
-      "type": "WINDOWS_SERVER",
-      "hdd_capacity": "258",
-      "createdAt": 1615539462208
-    },
-    {
-      "id": "cPkdPC0",
-      "system_name": "2",
-      "type": "MAC",
-      "hdd_capacity": "256",
-      "createdAt": 1615539664707
+      "id": "QlL2f2S",
+      "system_name": "Welcome to Miami",
+      "type": "WINDOWS_WORKSTATION",
+      "hdd_capacity": "2048",
+      "createdAt": 1615568869866
     }
   ],
   "typeDevice": [

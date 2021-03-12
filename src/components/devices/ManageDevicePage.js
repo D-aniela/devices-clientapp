@@ -64,7 +64,7 @@ function ManageDevicePage({
       .then(() => {
         toast.success("Device saved");
         // tu use history for <Redirect>
-        history.push("/devices");
+        history.push("/");
       })
       .catch((error) => {
         setSaving(false);

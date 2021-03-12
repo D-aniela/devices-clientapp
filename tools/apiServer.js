@@ -44,7 +44,7 @@ server.use((req, res, next) => {
   next();
 });
 
-server.post("/devices/", function (req, res, next) {
+server.post("//", function (req, res, next) {
   const error = validateDevice(req.body);
   console.log("entre");
   if (error) {
