@@ -1,8 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
-    max-width: 850px;
-    margin: 0 auto;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
-nav{
-    padding: 20px 0 20px 0;
+nav {
+  padding: 20px 0 20px 0;
 }

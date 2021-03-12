@@ -37,17 +37,16 @@ class DevicesPage extends React.Component {
       <>
         {this.state.redirectToAddDevicePage && <Redirect to="/device" />}
         <h2>Devices</h2>
+        <DeviceList
+          onDeleteClick={this.handleDeleteDevice}
+          devices={this.props.devices}
+        />
         <button
-          style={{ marginBottom: 20 }}
           className="btn btn-info add-device"
           onClick={() => this.setState({ redirectToAddDevicePage: true })}
         >
           Add Device
         </button>
-        <DeviceList
-          onDeleteClick={this.handleDeleteDevice}
-          devices={this.props.devices}
-        />
       </>
     );
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "./DeviceList.css";
 
 const DeviceList = ({ devices, onDeleteClick }) => (
   <table className="table">
@@ -20,15 +21,19 @@ const DeviceList = ({ devices, onDeleteClick }) => (
             <td>{device.hdd_capacity + " GB"}</td>
             <td>
               <button className="btn btn-info">
-                <Link to={"/device/" + device.system_name}>Edit</Link>
+                <Link className="editBtn" to={"/device/" + device.system_name}>
+                  Edit
+                </Link>
               </button>
             </td>
-            <button
-              className="btn btn-danger"
-              onClick={() => onDeleteClick(device)}
-            >
-              Delete
-            </button>
+            <td>
+              <button
+                className="btn btn-danger"
+                onClick={() => onDeleteClick(device)}
+              >
+                Delete
+              </button>
+            </td>
           </tr>
         );
       })}

@@ -13,7 +13,8 @@ const DeviceForm = ({
 }) => {
   return (
     <form onSubmit={onSave}>
-      <h2>{device.id ? "Edit" : "Add"} Device</h2>
+      <div className="bgColor"></div>
+      <h2 className="edit_add">{device.id ? "Edit" : "Add"} Device</h2>
       {errors.onSave && (
         <div className="alert alert-danger" role="alert">
           {errors.onSave}
