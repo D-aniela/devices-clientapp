@@ -37,6 +37,7 @@ class DevicesPage extends React.Component {
       <>
         {this.state.redirectToAddDevicePage && <Redirect to="/device" />}
         <h2>Devices</h2>
+
         <DeviceList
           onDeleteClick={this.handleDeleteDevice}
           devices={this.props.devices}

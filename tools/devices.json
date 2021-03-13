@@ -3,14 +3,14 @@
     {
       "id": "e8okoP2l5",
       "system_name": "DESKTOP-SMART",
-      "type": "MAC",
+      "type": "WINDOWS_WORKSTATION",
       "hdd_capacity": "10"
     },
     {
       "id": "Th3ngERn9",
       "system_name": "MAC-LEADER",
       "type": "MAC",
-      "hdd_capacity": "2048"
+      "hdd_capacity": "1000"
     },
     {
       "id": "Q1JdBnE12",
@@ -31,12 +31,6 @@
       "hdd_capacity": "180"
     },
     {
-      "id": "GT556QGnk",
-      "system_name": "GOOD-MAC",
-      "type": "MAC",
-      "hdd_capacity": "500"
-    },
-    {
       "id": "R5LdSnQhY",
       "system_name": "SERVER-ONE",
       "type": "WINDOWS_SERVER",
@@ -55,18 +49,32 @@
       "hdd_capacity": "256"
     },
     {
-      "id": "yhfNuNA",
-      "system_name": "Miami",
-      "type": "MAC",
+      "id": "8Swjyc-",
+      "system_name": "Hola2",
+      "type": "WINDOWS_SERVER",
       "hdd_capacity": "2048",
-      "createdAt": 1615568675614
+      "createdAt": 1615569766874
     },
     {
-      "id": "QlL2f2S",
-      "system_name": "Welcome to Miami",
-      "type": "WINDOWS_WORKSTATION",
+      "id": "oMK6xlo",
+      "system_name": "Segundo",
+      "type": "WINDOWS_SERVER",
       "hdd_capacity": "2048",
-      "createdAt": 1615568869866
+      "createdAt": 1615587560137
+    },
+    {
+      "id": "pRYQkUO",
+      "system_name": "Hola",
+      "type": "WINDOWS_WORKSTATION",
+      "hdd_capacity": "256",
+      "createdAt": 1615587571635
+    },
+    {
+      "id": "TLooYSN",
+      "system_name": "Segundo",
+      "type": "WINDOWS_SERVER",
+      "hdd_capacity": "300",
+      "createdAt": 1615597729792
     }
   ],
   "typeDevice": [

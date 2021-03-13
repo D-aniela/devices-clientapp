@@ -11,3 +11,8 @@ export const API_CALL_ERROR = "API_CALL_ERROR";
 
 // no success
 export const DELETE_COURSE_OPTIMISTIC = "DELETE_COURSE_OPTIMISTIC";
+
+//filtering, sort by
+export const SORT_BY_ALPHABET = "SORT_BY_ALPHABET";
+export const SORT_BY_CAPACITY = "SORT_BY_CAPACITY";
+export const FILTER_BY_TYPE = "SORT_BY_TYPE";

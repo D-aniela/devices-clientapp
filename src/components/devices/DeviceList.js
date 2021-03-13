@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import DeviceListSelect from "./DeviceListSelect";
 import "./DeviceList.css";
 
 const DeviceList = ({ devices, onDeleteClick }) => (
   <table className="table">
+    <DeviceListSelect />
     <thead>
       <tr>
         <th>System Name</th>

@@ -20,6 +20,7 @@ function ManageDevicePage({
   const [device, setDevice] = useState({ ...props.device });
   const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
+  
 
   useEffect(() => {
     if (devices.length === 0) {
