@@ -5,7 +5,14 @@ import initialState from "./initialState";
 export default function deviceReducer(state = initialState.devices, action) {
   switch (action.type) {
     case types.CREATE_DEVICE_SUCCESS:
-      return [...state, { ...action.device }];
+      return [
+        ...state,
+        {
+          ...action.device,
+          filteredItems: action.payload,
+          devices: action.payload,
+        },
+      ];
 
     case types.UPDATE_DEVICE_SUCCESS:
       return state.map((device) =>

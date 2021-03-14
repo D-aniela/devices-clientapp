@@ -20,7 +20,6 @@ function ManageDevicePage({
   const [device, setDevice] = useState({ ...props.device });
   const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
-  
 
   useEffect(() => {
     if (devices.length === 0) {
@@ -53,6 +52,7 @@ function ManageDevicePage({
     if (!system_name) errors.system_name = "System Name is required";
     if (!type) errors.type = "Device type is required";
     if (!hdd_capacity) errors.hdd_capacity = "Device capacity is required";
+    if (isNaN(hdd_capacity)) errors.hdd_capacity = "Must input numbers";
 
     setErrors(errors);
     return Object.keys(errors).length === 0;

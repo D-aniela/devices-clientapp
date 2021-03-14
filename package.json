@@ -5,26 +5,23 @@
     "start": "run-p start:dev start:api",
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
     "prestart:api": "node tools/createMockDb.js",
-    "start:api": "node tools/apiServer.js"
+    "start:api": "node tools/apiServer.js",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/tools/styleMock.js"
+    }
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@progress/kendo-data-query": "^1.5.4",
-    "@progress/kendo-react-data-tools": "^4.4.0",
-    "@progress/kendo-react-grid": "^4.4.0",
-    "@progress/kendo-react-popup": "^4.4.0",
-    "@progress/kendo-scheduler-react-wrapper": "^2019.4.1014",
-    "@progress/kendo-theme-material": "^3.30.0",
-    "axios": "^0.21.1",
     "bootstrap": "4.3.1",
+    "file-loader": "^6.2.0",
     "immer": "^8.0.1",
     "jsx-runtime": "^1.2.0",
     "prop-types": "15.7.2",
     "react": "16.8.4",
     "react-async-select": "^0.2.6",
-    "react-data-grid": "^7.0.0-canary.37",
     "react-dom": "16.8.4",
     "react-multi-select-component": "^3.1.5",
     "react-redux": "^6.0.1",
@@ -53,7 +50,7 @@
     "fetch-mock": "7.3.1",
     "html-webpack-plugin": "3.2.0",
     "http-server": "^0.12.3",
-    "jest": "24.5.0",
+    "jest": "^24.5.0",
     "json-server": "^0.16.3",
     "mini-css-extract-plugin": "0.5.0",
     "node-fetch": "^2.3.0",

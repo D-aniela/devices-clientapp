@@ -23,7 +23,7 @@ const DeviceForm = ({
 
       <TextInput
         name="system_name"
-        label="System Name"
+        label="System Name *"
         value={device.system_name}
         onChange={onChange}
         error={errors.system_name}
@@ -31,7 +31,7 @@ const DeviceForm = ({
 
       <SelectInput
         name="type"
-        label="Device Type"
+        label="Device Type *"
         value={device.type}
         defaultOption="Select Device Type"
         options={typeDevice.map((types) => ({
@@ -44,7 +44,7 @@ const DeviceForm = ({
 
       <TextInput
         name="hdd_capacity"
-        label="Capacity"
+        label="Capacity *"
         value={device.hdd_capacity}
         onChange={onChange}
         error={errors.hdd_capacity}

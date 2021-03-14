@@ -7,10 +7,12 @@ import { bindActionCreators } from "redux";
 import DeviceList from "./DeviceList";
 import { Redirect } from "react-router-dom";
 import { toast } from "react-toastify";
+import * as data from "../../../tools/mockData";
 
 class DevicesPage extends React.Component {
   state = {
     redirectToAddDevicePage: false,
+    devices: data.devices,
   };
 
   componentDidMount() {
@@ -37,10 +39,10 @@ class DevicesPage extends React.Component {
       <>
         {this.state.redirectToAddDevicePage && <Redirect to="/device" />}
         <h2>Devices</h2>
-
         <DeviceList
           onDeleteClick={this.handleDeleteDevice}
           devices={this.props.devices}
+          deviceType={this.state.devices}
         />
         <button
           className="btn btn-info add-device"
