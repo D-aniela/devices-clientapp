@@ -3,13 +3,7 @@ import * as types from "./actionTypes";
 import { devices } from "../../../tools/mockData";
 
 // test thunk
-import thunk from "redux-thunk";
 import fetchMock from "fetch-mock";
-import configureMockStore from "redux-mock-store";
-
-// Asyn action test
-const middleware = [thunk];
-const mockStore = configureMockStore(middleware);
 
 describe("Async Actions", () => {
   afterEach(() => {
@@ -21,17 +15,6 @@ describe("Async Actions", () => {
         body: devices,
         headers: { "content-type": "application/json" },
       });
-
-      //   Actions expected from the thunk
-      const expectedActions = [
-        { type: types.BEGIN_API_CALL },
-        { type: types.LOAD_DEVICES_SUCCESS, devices },
-      ];
-
-      //   const store = mockStore({ devices: [] });
-      //   return store.dispatch(deviceActions.loadDevices()).then(() => {
-      //     expect(store.getActions()).toEqual(expectedActions);
-      //   });
     });
   });
 });
