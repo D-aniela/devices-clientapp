@@ -4,7 +4,7 @@ const server = jsonServer.create();
 const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "devices.json"));
 
-// Can pass a limited number of options to this to override (some) defaults. See https://github.com/typicode/json-server#api
+// Can pass a limited number of options to this to override (some)
 const middlewares = jsonServer.defaults({
   // Display json-server's built in homepage when json-server starts.
   static: "node_modules/json-server/dist",
@@ -51,7 +51,6 @@ const port = 3001;
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
-
 
 // Returns a URL friendly slug
 function createSlug(value) {

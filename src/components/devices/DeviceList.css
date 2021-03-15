@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -85,16 +85,19 @@ form {
   background: white;
 }
 
-.btn-primary{
-    margin-left: 75%;
-    font-size: 20px;
-    width: 100px;
-    height: auto;
+.btn-primary {
+  margin-left: 75%;
+  font-size: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.alert {
+  width: 600px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .alert{
-    width: 600px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  border-radius: 10px;
 }
-
