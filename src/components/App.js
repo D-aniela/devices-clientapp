@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import DevicesPage from "./devices/DevicesPage";
+// eslint-disable-next-line import/no-named-as-default
 import ManageDevicePage from "./devices/ManageDevicePage";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
