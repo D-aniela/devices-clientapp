@@ -53,6 +53,19 @@
       "system_name": "MOON-SMART",
       "type": "WINDOWS_SERVER",
       "hdd_capacity": "256"
+    },
+    {
+      "id": "Up5bcEQp4",
+      "system_name": "JULIO-MAC-LOCAL",
+      "type": "MAC",
+      "hdd_capacity": "512"
+    },
+    {
+      "id": "7CSNz4a",
+      "system_name": "MAC-LEADER",
+      "type": "MAC",
+      "hdd_capacity": "256",
+      "createdAt": 1615767409440
     }
   ],
   "typeDevice": [
