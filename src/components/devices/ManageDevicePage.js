@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { toast } from "react-toastify";
+
 import { loadDevices, saveDevice } from "../../redux/actions/deviceActions";
 import { loadTypes } from "../../redux/actions/typeActions";
 import PropTypes from "prop-types";
+
 import DeviceForm from "./DeviceForm";
 import { newDevice } from "../../../tools/mockData";
-import { toast } from "react-toastify";
 
-function ManageDevicePage({
+export function ManageDevicePage({
   typeDevice,
   devices,
   loadTypes,
@@ -90,7 +92,7 @@ ManageDevicePage.propTypes = {
   devices: PropTypes.array.isRequired,
   typeDevice: PropTypes.array.isRequired,
   loadDevices: PropTypes.func.isRequired,
-  loadTypes: PropTypes.func.isRequired,
+  loadTypes: PropTypes.func,
   saveDevice: PropTypes.func.isRequired,
   history: PropTypes.object.isRequired,
 };
